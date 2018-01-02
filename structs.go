@@ -10,13 +10,13 @@ type Person struct {
 
 // Methods inside structs like methods inside a class/objects
 
-func (p *Person) talk(lang string) string {
+func (p Person) talk(lang string) string {
 	temp := p.name + " is talking " + lang
 	fmt.Println(temp)
 	return temp
 }
 
-func (p *Person) walk() string {
+func (p Person) walk() string {
 	return p.name + " is walking"
 }
 
