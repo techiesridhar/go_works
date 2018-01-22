@@ -10,6 +10,8 @@ type Person struct {
 
 // Methods inside structs like methods inside a class/objects
 
+// NOTE: func (p Person) -> p is Pass by value
+//       func (*p Person) -> p is Pass by reference, (updates will reflect everywhere)
 func (p Person) talk(lang string) string {
 	temp := p.name + " is talking " + lang
 	fmt.Println(temp)
