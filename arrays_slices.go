@@ -11,6 +11,9 @@ func main() {
 	// [N]Type{value1, value2, ..., valueN}
 	// [...]Type{value1, value2, ..., valueN}
 
+	// With values
+	letters := []string{"a", "b", "c", "d"}
+	
 	// Array with five positions
 	var an_array [5]int
 	an_array[0] = 1
